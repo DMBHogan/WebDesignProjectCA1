@@ -1,0 +1,213 @@
+/*
+    colors
+    white -         #ffffff
+    dark green -    #1b4d3e
+    green -         #2e6f5e
+    light green -   #e8f5e9
+    textCOLOURS
+    gold           #d4af37
+    dark            #333333
+    bg-light -      #f9f9f9
+    white -         #ffffff
+
+*/
+
+
+
+
+/* navigation bar */
+.navbar{
+    background-color: #1b4d3e;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.navbarContainer {
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* main page content */
+.main{
+    max-width: 1140px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.mainSectionTitle{
+    color: #1b4d3e;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* footer */
+.footer{
+    background-color: #1b4d3e;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+/* page defaults: font and colours */
+body{
+    font-family: CeraPro, Arial, sans-serif;
+    color: #333333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+/* logo */
+.logo{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+
+/* links in nav bar */
+.pageLinks{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.pageLinks a{
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.pageLinks a:hover {
+    color: #d4af37;
+
+}
+
+/*not working? ?? */
+.pageLinks a.active {
+    color: #d4af37;
+}
+
+/*Banner*/
+
+.banner{
+    background: linear-gradient(rgba(27, 77, 62, 0.75), rgba(27, 77, 62, 0.75)), url('images/IrishCoast2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+
+}
+
+.experienceButton{
+    background-color: #d4af37;
+    color: #333333;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    /*not working?? */
+    transition: background-color 0.2s ease;
+}
+
+.experienceButton:hover{
+    background-color: #b8972b;
+    color: #333333;
+}
+
+.banner h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner p{
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+/* home page two-column story section */
+.mainSection{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.imageStyle{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* cards in grid*/
+.card{
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* slider colours*/
+.form-range::-webkit-slider-thumb { background-color: #1b4d3e; }
+.form-range::-moz-range-thumb { background-color: #1b4d3e; }
+.form-range::-webkit-slider-runnable-track { background-color: #e8f5e9; }
+.form-range::-moz-range-track { background-color: #e8f5e9; }
+
+
+.carouselImage {
+    height: 400px;
+    object-fit: cover;
+}
+/* carousel link */
+.slideLink {
+    display: block;
+    text-decoration: none;
+ }
+
+/* sets home page to stack verically so phone view works*/
+ @media (max-width: 768px) {
+       .mainSection {
+           grid-template-columns: 1fr;
+       }
+   }
+
+
+
+
+/*
+.headerpage2 {
+    color: 1b4d3e;
+}
+
+h1{
+    color: 1b4d3e;
+}
+*/
+
+
+
+
+
+
+

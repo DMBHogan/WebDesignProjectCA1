@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerald Escapes Home</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation bar-->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a class="logo" href="index.html"><span>☘&#xFE0F;</span><span>Emerald Escapes</span></a>
+            <ul class="pageLinks">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="contact.html">Contact & Booking</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+<!-- banner -->
+    <header class="banner">
+        <div>
+            <h1>Discover Ireland.</h1>
+            <p>An unforgettable time, from short breaks, quiet adventures and breathtaking scenery</p>
+            <a href="experiences.html" class="experienceButton">View Our Experiences</a>
+        </div>
+    </header>
+
+
+    <!-- Main Section -->
+    <main class="main">
+        <section class="mainSection">
+            <div>
+                <h2 class="mainSectionTitle">Our Story</h2>
+                <p>At Emerald Escapes we aim to find an Escape for all types of Adventurers. Whether you are looking to discover the past, raise  your heart rate or rub shoulders with the
+                 locals in the pub.
+
+                    Our Target customers include the solo traveller, families and small to medium groups.
+                </p>
+            </div>
+            <div>
+
+                <!--Carousel  example adapted from https://getbootstrap.com/docs/5.0/components/carousel/ -->
+                <div id="featuredCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="experiences.html" class="slideLink">
+                                <img src="images/CliffsMoher.jpg" class="d-block w-100 carouselImage" alt="Cliffs of Moher on the Clare coast">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Breathtaking Cliffs of Moher</h5>
+                                    <p>A hike like no other</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="experiences.html" class="slideLink">
+                                <img src="images/Kayaking.jpg" class="d-block w-100 carouselImage" alt="Kayaking off the Coast">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Sea Kayaking</h5>
+                                    <p>Kayak the wild Atlantic coast</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="experiences.html" class="slideLink">
+                                <img src="images/AranIsland.jpg" class="d-block w-100 carouselImage" alt="Aran Island">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Aran Islands</h5>
+                                    <p>Meet the real rural Ireland</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+       <p>2026 Emerald Escapes. All rights reserved</p>
+    </footer>
+
+</body>
+</html>
